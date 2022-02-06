@@ -33,6 +33,23 @@
 .smalltext {font-size: 10px}
 -->
 </style>
+<style>
+.flex-container {
+  display: flex;
+  flex-wrap: nowrap;
+  background-color: DodgerBlue;
+}
+
+.flex-container > div {
+  background-color: #f1f1f1;
+  width: 50%;
+  margin: 10px;
+  text-align: center;
+  line-height: 75px;
+  font-size: 30px;
+}
+</style>
+
 </head>
 <body>
 <!-- Load an icon library to show a hamburger menu (bars) on small screens -->
@@ -65,6 +82,13 @@
 Project/ Case Study section  holder
 </section>
   </div>
+</div>
+
+<h1>Flexible Boxes</h1>
+
+<div class="flex-container">
+  <div>1</div>
+  <div>2</div>
 </div>
 
 <div class="footer smalltext">
