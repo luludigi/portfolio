@@ -237,3 +237,8 @@ figcaption {
   margin-right: auto;
   margin-left: auto;
 }
+
+<!-- Skills text -->
+.skill-text {
+	font-size: small;
+    margin-right: 8px;
