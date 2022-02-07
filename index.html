@@ -31,34 +31,39 @@
 .smalltext {font-size: small;
 }
 
-<!-- Flexbox Layout - My Skills -->
+/* Flexbox layout */
 
 .flex-container {
 	display: flex;
 	flex-wrap: nowrap;
 	background-color: #FFFFFF;
+	flex-direction: row;
 }
 
 .flex-container > div {
 	background-color: #FFFFFF;
 	width: 50%;
-	margin: 15px;
+	margin: 50px;
 	text-align: left;
-	line-height: normal;
 }
 
-<!-- Grid Layout - My Works -->
+/* Project grid layout */
 .grid-container1 {
   display: grid;
   grid-template-columns: 60% 40%;
+  margin-inline: auto;
   background-color: #FFFFFF;
   padding: 10px;
+  flex-basis: 100%;
 }
 .grid-container2 {
   display: grid;
   grid-template-columns: 40% 60%;
+  margin-inline: auto;	
   background-color: #FFFFFF;
   padding: 10px;
+  flex-basis: 100%;
+	
 }
 
 .grid-item {
@@ -67,8 +72,57 @@
   padding: 20px;
   font-size: 30px;
   text-align: center;
+  flex-basis: 100%;	
 }
 .style2 {font-size: x-small}
+
+/* Media Query to Make Your Design Responsive for Mobile Devices. On screens that are 700px wide or less, background color will change to purple and width will be 50% */	
+@media screen and (max-width: 700px) {
+		.flex-container {
+ 	    width: 50%;
+		background-color: plum;
+  }
+		.grid-container1 {
+		width: 50%;
+		background-color: plum;
+	}
+	
+		.grid-container2 {
+		width: 50%;
+		background-color: plum;
+	}
+}
+
+/* On screens that are 600px wide or less, make the columns stack on top of each other at 100% width instead of next to each other, the background color will become pink */
+@media screen and (max-width: 600px) {
+		.flex-container {
+  		width: 100%;
+		background-color: pink;
+		flex-direction: column;
+		
+	}
+		.flex-container > div {
+	background-color: #FFFFFF;
+	width: 100%;
+	margin: 50px;
+	text-align: left;
+}	
+		.grid-container1 {
+		width: 100%;
+		background-color: pink;
+	}
+	
+		.grid-container2 {
+		width: 100%;
+		background-color: pink;
+	}
+		.column {
+		width: 100%;
+		background-color: pink;
+		flex-direction: column;
+			
+	}
+}
 </style>
 
 </head>
@@ -95,9 +149,9 @@
       <input type="submit" name="Resume" id="Resume" value="Download Resume">
       <span class="style2">*Resume not linked. </span></label>
     </form>
-    <strong>Note to TA:<br>
+    <strong>Note to the TA:<br>
     </strong>Homework 17: shows the navgation/menu bar, hero image and footer sections, style.css file contains additonal global styles.<br>
-    Homework 18: using flexbox layout for my skills section and gird layout for my works section.</div>
+    Homework 18: using flexbox layout for my skills section and gird layout for my works section. adding the media query to make my layouts (column, flexbox and grid) reponsive to screens that over 700px or smaller than 600px. It will change the width and background color once over the &quot;breakpoints&quot;. Please refer to the notes within my css code.</div>
 </div>
 
 <h3>My Skills</h3>
@@ -106,12 +160,12 @@
     <h4>Technology</h4>
     <ul role="list">
       <li>
-      <div>Adobe Creative Cloud (Graphic &amp; Web Design)</div>
-      <div>Photoshop, Dreamweaver, InDesign, Illustrator, Premier, Adobe XD.</div>
+      Adobe Creative Cloud (Graphic &amp; Web Design)<br>
+  Photoshop, Dreamweaver, InDesign, Illustrator, Premier, Adobe XD.
       </li>
       <li>
-      <div>Content Management System (Website Development/ Managment)</div>
-      <div>Drupal, Joomla, WordPress, Finalsite, SharePoint and Tridion.</div>
+     Content Management System (Website Development/ Managment)<br>
+     Drupal, Joomla, WordPress, Finalsite, SharePoint and Tridion.
       </li>
       <li>Figma (UX/UI Design)<br>
       For developing design prototype.</li>
@@ -131,10 +185,10 @@
       AP Style Wiring. Proficient in Chinese.</li>
     </ul>
   </div>
+
   <div class="skill-text">
-    <h4>Certfication
-    </h4>
-    <div>
+    <h4>Certfication</h4>
+ 
       <div><strong>Upcoming</strong></div>
       <ul role="list">
         <li>
@@ -147,7 +201,8 @@
           <div>IAAP WAS (July 2022)</div>
         </li>
       </ul>
-    </div>
+  
+    
     <div><strong>Past</strong></div>
     <ul role="list">
       <li>
@@ -178,19 +233,30 @@
         <div>Accessibility in IT Procurement (Oct 2021)</div>
       </li>
     </ul>
+
   </div>
 </div>
 
 <h3>My Projects</h3>
 
 <div class="grid-container1">
-  <div class="grid-item">Project 1</div>
-  <div class="grid-item">Project 2</div>
+  <div class="grid-item"><img src="images/Brightside cover.JPG" alt="Brightside cover" width="645" height="260"><br>
+  UX/UI Design</div>
+  <div class="grid-item">
+    <p align="center"><img src="images/web design-mobile.jpg" align="center" alt="Mobile Design" width="241" height="248"></p>
+    <p>Web Design</p>
+  </div>
 </div>
 
 <div class="grid-container2">
-  <div class="grid-item">Project 3</div>
-  <div class="grid-item">Project 4</div>
+  <div class="grid-item">
+    <p><img src="images/web design-mobile.jpg" align="center" alt="Mobile Design" width="241" height="248"></p>
+    <p>Mobile Design</p>
+  </div>
+  <div class="grid-item">
+    <p><img src="images/accessibility presenter.jpg" alt="Accessibility project" width="615" height="313"></p>
+    <p>Accessibility Project</p>
+  </div>
 </div>
 
 
