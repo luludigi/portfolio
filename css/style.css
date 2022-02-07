@@ -2,20 +2,50 @@
 /* CSS Document */
 
 /* ==========================================================================
-   Google Fonts - Poppins, Sans-Serif.
+   imports: Google Fonts - Poppins, Sans-Serif.
    ========================================================================== */
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200&display=swap');
 
 /* ==========================================================================
-   Start of custom Webflow CSS
+   Start of custom CSS
    ========================================================================== */
 
 body {
-  font-family: Arial, Helvetica, sans-serif;
+  font-family: Poppins, sans-serif;
+}
+
+<!-- Skills text -->
+.skill-text {
+	font-size: small;
+    margin-right: 8px;	
+}
+
+<!-- Project grid layout -->
+.project-description-grid {
+    margin-top: 120px;
+    margin-bottom: 120px;
+    grid-column-gap: 30px;
+    grid-row-gap: 30px;
+    grid-template-areas: ". .";
+    -ms-grid-columns: 1fr 30px 2.5fr;
+    grid-template-columns: 1fr 2.5fr;
+    -ms-grid-rows: auto;
+    grid-template-rows: auto;
+}
+
+.w-layout-grid {
+    display: -ms-grid;
+    display: grid;
+    grid-auto-columns: 1fr;
+    -ms-grid-columns: 1fr 1fr;
+    grid-template-columns: 1fr 1fr;
+    -ms-grid-rows: auto auto;
+    grid-template-rows: auto auto;
+    grid-row-gap: 16px;
+    grid-column-gap: 16px;
 }
 
 /* Style the header */
-
 .topnav {
   overflow: hidden;
   background-color: #FBF7F7;
@@ -31,7 +61,6 @@ header {
 }
 
 /* Create two equal columns that floats next to each other */
-
 .heroImg {
   display: flex;
 }
@@ -54,7 +83,7 @@ nav ul {
   padding: 0;
 }
 
-/* Style the footer */
+/* Style the body and footer */
 footer {
   background-color: #FBF7F7;
   padding: 10px;
@@ -237,8 +266,3 @@ figcaption {
   margin-right: auto;
   margin-left: auto;
 }
-
-<!-- Skills text -->
-.skill-text {
-	font-size: small;
-    margin-right: 8px;

@@ -28,9 +28,13 @@
 </script>
 
 <link href="css/style.css" rel="stylesheet" type="text/css">
+
 <style type="text/css">
 .smalltext {font-size: 10px;
 }
+
+<!-- Flexbox Layout - My Skills -->
+
 .flex-container {
 	display: flex;
 	flex-wrap: nowrap;
@@ -44,21 +48,41 @@
 	text-align: left;
 	line-height: normal;
 }
+
+<!-- Grid Layout - My Works -->
+.grid-container {
+  display: grid;
+  grid-template-columns: 60% 40%;
+  background-color: #FFFFFF;
+  padding: 10px;
+}
+.grid-container2 {
+  display: grid;
+  grid-template-columns: 40% 60%;
+  background-color: #FFFFFF;
+  padding: 10px;
+}
+
+.grid-item {
+  background-color: rgba(255, 255, 255, 0.8);
+  border: 1px solid rgba(0, 0, 0, 0.8);
+  padding: 20px;
+  font-size: 30px;
+  text-align: center;
+}
 </style>
 
 </head>
 <body>
 <!-- Load an icon library to show a hamburger menu (bars) on small screens -->
-<div class="topnav" id="myTopnav">
-<img src="images/logo.JPG" alt="Emily Lu logo" width="89" height="42">
-  <div align="right">
-  	<a href="#home">HOME</a>
-    <a href="#about">ABOUT</a>
-    <a href="#project">PROJECT</a>
-    <a href="#contact">CONTACT</a>  
-   </div>
-</div>
 
+<div class="topnav" id="myTopnav">
+	  <img src="images/logo.JPG" alt="Emily Lu logo" width="89" height="42">
+	  <a href="#home">HOME</a>
+      <a href="#about">ABOUT</a>
+      <a href="#project">PROJECT</a>
+      <a href="#contact">CONTACT</a>
+</div>
 
 <div class="heroImg">
   <div class="column" align="right">
@@ -118,75 +142,64 @@ Project/ Case Study section  holder
       <div><strong>Upcoming</strong></div>
       <ul role="list">
         <li>
-          <div>University of Minnesota UX/UI Bootcamp</div>
-           
-          <div>(March 2022)</div>
+          <div>University of Minnesota UX/UI Bootcamp (March 2022)</div>
         </li>
         <li>
-          <div>IAAP CPACC</div>
-           
-          <div>(April 2022)</div>
+          <div>IAAP CPACC (April 2022)</div>
         </li>
         <li>
-          <div>IAAP WAS</div>
-           
-          <div>(June 2022)</div>
+          <div>IAAP WAS (July 2022)</div>
         </li>
       </ul>
     </div>
     <div><strong>Past</strong></div>
     <ul role="list">
       <li>
-        <div>Certified in Digital Accessibility from WebAIM</div>
-         
-        <div>(Dec 2018)</div>
+        <div>Certified in Digital Accessibility from WebAIM (Dec 2018)</div>
       </li>
       <li>
-        <div>Certified in Advanced GoogleAnalytics from Google</div>
-         
-        <div>(Nov 2018)</div>
+        <div>Certified in Advanced GoogleAnalytics from Google (Nov 2018)</div>
       </li>
       <li>
-        <div>Completed in WordPress: Accessibility from LinkedIn</div>
-         
-        <div>(Jun 2018)</div>
+        <div>Completed in WordPress: Accessibility from LinkedIn (June 2018)</div>
       </li>
       <li>
-        <div>Completed in Drupal 8 Essential training from LinkedIn</div>
-         
-        <div>(Apr 2018)</div>
+        <div>Completed in Drupal 8 Essential training from LinkedIn (April 2018)</div>
       </li>
       <li>
-        <div>Inclusive Design</div>
-         
-        <div>(Nov 2021)</div>
+        <div>Inclusive Design (Nov 2021)</div>
       </li>
       <li>
-        <div>Mobile Screen Reader Testing</div>
-         
-        <div>(Nov 2021)</div>
+        <div>Mobile Screen Reader Testing (Nov 2021)</div>
       </li>
       <li>
-        <div>ARIA for Developer</div>
-         
-        <div>(Nov 2021)</div>
+        <div>ARIA for Developer (Oct 2021)</div>
       </li>
       <li>
-        <div>Accessibility Audit Methodology</div>
-         
-        <div>(Oct 2021)</div>
+        <div>Accessibility Audit Methodology (Oct 2021)</div>
       </li>
       <li>
-        <div>Accessibility in IT Procurement</div>
-         
-        <div>(Oct 2021)</div>
+        <div>Accessibility in IT Procurement (Oct 2021)</div>
       </li>
     </ul>
   </div>
 </div>
 
+<h3>My Projects</h3>
+
+<div class="grid-container">
+  <div class="grid-item">Project 1</div>
+  <div class="grid-item">Project 2</div>
+</div>
+
+<div class="grid-container2">
+  <div class="grid-item">Project 3</div>
+  <div class="grid-item">Project 4</div>
+</div>
+
+
 <div class="footer smalltext">
-  <a href="#" target="_blank">About | Project | Connect | Sitemap | Accessibility |</a> <img src="images/logo-sm.jpg" width="32" alt="Emily Lu logo small"> © 2022 emilylu.us
+  <a href="#" target="_blank"> [ About ] [Project] [Contact] [ Sitemap ] [ Accessibility] </a> <img src="images/logo-sm.jpg" width="32" alt="Emily Lu logo small"> © 2022 emilylu.us
 </div>
 
 </body>
