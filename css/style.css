@@ -10,17 +10,104 @@
    Start of custom CSS
    ========================================================================== */
 
+/* Media Query to Make Your Design Responsive for Mobile Devices. On screens that are 700px wide or less, background color will change to purple and width will be 50% */	
+@media screen and (max-width: 700px) {
+		.flex-container {
+ 	    width: 50%;
+		background-color: plum;
+  }
+		.grid-container1 {
+		width: 50%;
+		background-color: plum;
+	}
+	
+		.grid-container2 {
+		width: 50%;
+		background-color: plum;
+	}
+}
+
+/* On screens that are 600px wide or less, make the columns stack on top of each other at 100% width instead of next to each other, the background color will become pink */
+@media screen and (max-width: 600px) {
+		.flex-container {
+  		width: 100%;
+		background-color: pink;
+		flex-direction: column;
+		
+	}
+		.flex-container > div {
+	background-color: #FFFFFF;
+	width: 100%;
+	margin: 50px;
+	text-align: left;
+}	
+		.grid-container1 {
+		width: 100%;
+		background-color: pink;
+	}
+	
+		.grid-container2 {
+		width: 100%;
+		background-color: pink;
+	}
+		.column {
+		width: 100%;
+		background-color: pink;
+		flex-direction: column;
+			
+	}
+}
+
 body {
   font-family: Poppins, sans-serif;
 }
 
- Skills text 
+/* skill text style */
+
 .skill-text {
 	font-size: small;
     margin-right: 8px;	
 }
 
- Project grid layout 
+/* Flexbox layout */
+
+.flex-container {
+	display: flex;
+	flex-wrap: nowrap;
+	background-color: #FFFFFF;
+}
+
+.flex-container > div {
+	background-color: #FFFFFF;
+	width: 50%;
+	margin: 15px;
+	text-align: left;
+}
+
+/* Project grid layout */
+.grid-container1 {
+  display: grid;
+  grid-template-columns: 60% 40%;
+  background-color: #FFFFFF;
+  padding: 10px;
+}
+.grid-container2 {
+  display: grid;
+  grid-template-columns: 40% 60%;
+  background-color: #FFFFFF;
+  padding: 10px;
+}
+
+.grid-item {
+  background-color: rgba(255, 255, 255, 0.8);
+  border: 1px solid rgba(0, 0, 0, 0.8);
+  padding: 20px;
+  font-size: 30px;
+  text-align: center;
+}
+
+/* Project grid layout */
+ 
 .grid-container1 {
   display: grid;
   grid-template-columns: 60% 40%;
@@ -71,7 +158,7 @@ body {
 .topnav {
   width: auto;
   overflow: hidden;
-  background-color: #FBF7F7;
+  background-color: ##fff1ee;
   font-size: normal;
   text-align: center;
   underline: none;
@@ -113,7 +200,7 @@ footer {
   background-color: #FBF7F7;
   padding: 10px;
   text-align: left;
-  color: white;
+  color: black;
   font-size: 10px;
 }
 
