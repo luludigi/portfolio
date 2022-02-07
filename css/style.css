@@ -14,13 +14,13 @@ body {
   font-family: Poppins, sans-serif;
 }
 
-<!-- Skills text -->
+ Skills text 
 .skill-text {
 	font-size: small;
     margin-right: 8px;	
 }
 
-<!-- Project grid layout -->
+ Project grid layout 
 .grid-container1 {
   display: grid;
   grid-template-columns: 60% 40%;
@@ -69,9 +69,12 @@ body {
 
 /* Style the header */
 .topnav {
+  width: auto;
   overflow: hidden;
   background-color: #FBF7F7;
-  font-size: 12px;
+  font-size: normal;
+  text-align: center;
+  underline: none;
 }
 
 header {
@@ -88,8 +91,8 @@ header {
 }
 
 .column {
-  flex: 50%;
-  padding: 10px;
+	flex: 50%;
+	padding: 30px;
 }
 
 nav {
