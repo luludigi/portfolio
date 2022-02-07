@@ -21,6 +21,28 @@ body {
 }
 
 <!-- Project grid layout -->
+.grid-container1 {
+  display: grid;
+  grid-template-columns: 60% 40%;
+  background-color: #FFFFFF;
+  padding: 10px;
+}
+
+.grid-container2 {
+  display: grid;
+  grid-template-columns: 40% 60%;
+  background-color: #FFFFFF;
+  padding: 10px;
+}
+
+.grid-item {
+  background-color: rgba(255, 255, 255, 0.8);
+  border: 1px solid rgba(0, 0, 0, 0.8);
+  padding: 20px;
+  font-size: 30px;
+  text-align: center;
+}
+
 .project-description-grid {
     margin-top: 120px;
     margin-bottom: 120px;
